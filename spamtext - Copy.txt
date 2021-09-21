@@ -1,4 +1,0 @@
-2
-1|Vote cho lầu 2
-3|Lầu 2
-2|Lựa chọn lầu 2, chưa bao giờ sai
