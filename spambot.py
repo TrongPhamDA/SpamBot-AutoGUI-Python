@@ -13,7 +13,6 @@ def readspamtext(filename="spamtext.txt"):
     contents = myfile.readlines()
     for i in range(len(contents)):
         contents[i] = contents[i].strip()
-        # print(contents[i])
     myfile.close()
     return contents
 
@@ -26,8 +25,8 @@ def sendmessage(spam_split):
     content = spam_split[1]
     for i in range (times):
         # type with 1/8 second delay after each character
-        pyautogui.typewrite(content.encode('utf-8').decode('utf-8'), interval=0.125)
-        print(content.encode('utf-8').decode('utf-8'))
+        pyautogui.typewrite(content, interval=0.125)
+        print(f"Typing: {content}")
         pyautogui.press("enter")
         time.sleep(delay_time)
 
@@ -45,12 +44,12 @@ contents = readspamtext(filename)
 spam_times = int(contents[0])
 contents.pop(0)
 countdown(countdown_time)
-
+print(f"Spam  : {spam_times} times")
 while spam_times > 0:
-    print(f"Remain: {spam_times} times")
+    print(f"\nRemain: {spam_times} times")
     spam_times -= 1
     for i in range (len(contents)):
         spam_split = splitspamtext(contents[i])
         sendmessage(spam_split)
     
-print(f"-- DONE --")
+print(f"\n-- DONE --")
