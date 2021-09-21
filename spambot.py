@@ -2,7 +2,7 @@ import time
 import pyautogui
 
 # type filename here, or default is "spamtext.txt"
-filename = "spamtext - Copy.txt"
+filename = "spamtext.txt"
 # delay each text (second)
 delay_time = 1
 # print a warning
