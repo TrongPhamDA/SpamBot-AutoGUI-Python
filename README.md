@@ -43,7 +43,6 @@ các ký tự bị lập lại như: â, ô, ê, đ thì x2 lần lên thành 'a
 <br/>
 rồi dấu sắc là s, dấu huyền là f, dấu hỏi là r, dấu ngã là x, và dấu nặng là j<br/>
 <br/>
-'Lựa chọn lầu 2' thành 'Lwaj chonj laauf 2'<br/>
 <br/>
 --<br/>
 Contact me: trongphamda@gmail.com
